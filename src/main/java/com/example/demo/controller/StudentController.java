@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Restcontroller
 public class StudentController {
-    @Autowired StudentService 
+    @Autowired StudentService ser;
 }
