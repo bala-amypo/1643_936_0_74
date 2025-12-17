@@ -10,7 +10,7 @@ import jakarta.persistence.GenerationType;
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Private Integer Id;
+    Private Integer id;
     Private String Username;
     Private String Email;
     Private String Password;
@@ -18,7 +18,7 @@ public class StudentEntity{
 
     //Getter Method
     public void getId(){
-        return Id;
+        return id;
     }
     public void getUsername(){
         return Username;
@@ -35,7 +35,7 @@ public class StudentEntity{
 
     //Setter Method
     public void setId(Integer id){
-        this.Id = id;
+        this.id = id;
     }
     public void setUsername(String name){
         this.Username = name;
@@ -51,8 +51,8 @@ public class StudentEntity{
     } 
 
     //Constructor
-    void getAll(Integer Id, String Username, String Email, String Password, Data Created){
-        this.Id = Id;
+    void getAll(Integer id, String Username, String Email, String Password, Data Created){
+        this.id = id;
         this.Username = Username;
         this.Email = Email;
         this.Password = Password;
