@@ -12,6 +12,6 @@ public class StudentController {
     @Autowired StudentService service;
     @PostMapping("/post")
     public StudentEntity postvalue(@RequestBody StudentEntity entity){
-        return service.postdata(entity);
+        return service.Postdata(entity);
     }
 }
