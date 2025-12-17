@@ -51,7 +51,7 @@ public class StudentEntity{
     } 
 
     //Constructor
-    void getAll(Integer id, String Username, String Email, String Password, Data Created){
+    void StudentEntity(Integer id, String Username, String Email, String Password, Data Created){
         this.id = id;
         this.Username = Username;
         this.Email = Email;
@@ -60,7 +60,7 @@ public class StudentEntity{
     }
 
     //Default Constructor
-    void getAll(){
+    void StudentEntity(){
 
     }
 
