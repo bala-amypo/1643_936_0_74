@@ -56,7 +56,6 @@ public class StudentEntity{
         this.Created = Created;
     }
 
-    //Default Constructor
     StudentEntity(){
 
     }
