@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
@@ -13,6 +12,6 @@ public class StudentController {
     @Autowired StudentService service;
     @PostMapping("/post")
     public StudentEntity postvalue(@RequestBody StudentEntity entity){
-        return service.postdata(entity);
+        return service.postData(entity);
     }
 }
