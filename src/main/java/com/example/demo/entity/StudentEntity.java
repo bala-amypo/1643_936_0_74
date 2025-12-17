@@ -1,12 +1,14 @@
 package com.example.demo.entity;
 
+import ja
+
 @Entity
 public class StudentEntity{
     Private Integer Id;
     Private String Username;
     Private String Email;
     Private String Password;
-    Private Data Created;
+    Private Date Created;
 
     //Getter Method
     public void getId(){
@@ -26,7 +28,7 @@ public class StudentEntity{
     } 
 
     //Setter Method
-    public void setId(int id){
+    public void setId(Integer id){
         this.Id = id;
     }
     public void setUsername(String name){
@@ -38,12 +40,12 @@ public class StudentEntity{
     public void setPassword(String pass){
         this.Password = pass;
     }
-    public void setCreated(Data date){
+    public void setCreated(Date date){
         this.Created = date;
     } 
 
     //Constructor
-    void getAll(int Id, String name, String Email, String Password, Data Created){
+    void getAll(Integer Id, String name, String Email, String Password, Data Created){
         this.Id = Id;
         this.Username = name;
         this.Email = Email;
