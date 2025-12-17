@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.StudentEntity;
-import com.example.demo.StudentController;
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.controller;
 
 
 public interface StudentService {
-    public void post(){
-        
+    StudentEntity PostData(StudentEntity en){
+
     }
 }
