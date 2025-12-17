@@ -42,12 +42,18 @@ public class StudentEntity{
         this.Created = date;
     } 
 
-    void getAll(int Id, String name, String Email, String Password, Data created){
+    //Constructor
+    void getAll(int Id, String name, String Email, String Password, Data Created){
         this.Id = Id;
         this.Username = name;
         this.Email = Email;
         this.Password = Password;
-        this.Created = created;
+        this.Created = Created;
+    }
+
+    //Default Constructor
+    void getAll(){
+
     }
 
 }
