@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
-import ja
+import java.sql.Date;
+import jakarta.persistence.Entity;
 
 @Entity
 public class StudentEntity{
@@ -45,9 +46,9 @@ public class StudentEntity{
     } 
 
     //Constructor
-    void getAll(Integer Id, String name, String Email, String Password, Data Created){
+    void getAll(Integer Id, String Username, String Email, String Password, Data Created){
         this.Id = Id;
-        this.Username = name;
+        this.Username = Username;
         this.Email = Email;
         this.Password = Password;
         this.Created = Created;
