@@ -10,7 +10,6 @@ import jakarta.persistence.GenerationType;
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     Private Integer Id;
     Private String Username;
     Private String Email;
