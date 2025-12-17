@@ -48,7 +48,7 @@ public class StudentEntity{
         this.Created = date;
     } 
 
-    StudentEntity(Integer id, String Username, String Email, String Password, Data Created){
+    StudentEntity(Integer id, String Username, String Email, String Password, Date Created){
         this.id = id;
         this.Username = Username;
         this.Email = Email;
