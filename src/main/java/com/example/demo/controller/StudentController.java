@@ -3,6 +3,7 @@ package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
+import com.example.demo.entity.StudentEntity;
 import org.springframework.beans.factory.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
