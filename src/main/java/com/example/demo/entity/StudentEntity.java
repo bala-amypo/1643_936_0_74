@@ -1,9 +1,6 @@
 package com.example.demo.entity;
 
+@Entity
 public class StudentEntity{
-    public:
-    String name;
-    int age;
-    String email;
-
+    
 }
