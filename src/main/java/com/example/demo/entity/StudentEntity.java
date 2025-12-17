@@ -16,6 +16,7 @@ public class StudentEntity{
     private String Password;
     private Date Created;
 
+    //Getter Method
     public Integer getId(){
         return id;
     }
@@ -32,6 +33,7 @@ public class StudentEntity{
         return Created;
     } 
 
+    //Setter Method
     public void setId(Integer id){
         this.id = id;
     }
@@ -48,6 +50,7 @@ public class StudentEntity{
         this.Created = date;
     } 
 
+
     StudentEntity(Integer id, String Username, String Email, String Password, Date Created){
         this.id = id;
         this.Username = Username;
@@ -56,6 +59,7 @@ public class StudentEntity{
         this.Created = Created;
     }
 
+    
     StudentEntity(){
 
     }
