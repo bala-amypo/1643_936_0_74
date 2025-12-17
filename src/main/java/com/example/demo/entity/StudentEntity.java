@@ -6,39 +6,48 @@ public class StudentEntity{
     Private String Username;
     Private String Email;
     Private String Password;
-    Private Data created;
+    Private Data Created;
 
-    public void getId(int id){
-        this.Id = id;
+    //Getter Method
+    public void getId(){
+        return Id;
     }
-    public void getUsername(String name){
-        this.Username = name;
+    public void getUsername(){
+        return Username;
     }
-    public void getEmail(String email){
-        this.Email = email;
+    public void getEmail(){
+        return Email;
     }
-    public void getPassword(String pass){
-        this.Password = pass;
+    public void getPassword(){
+        return Password;
     }
-    public void getCreated(Data date){
-        this.created = date;
-    } 
-    
-    public void getId(int id){
-        this.Id = id;
-    }
-    public void getUsername(String name){
-        this.Username = name;
-    }
-    public void getEmail(String email){
-        this.Email = email;
-    }
-    public void getPassword(String pass){
-        this.Password = pass;
-    }
-    public void getCreated(Data date){
-        this.created = date;
+    public void getCreated(){
+        return Created;
     } 
 
+    //Setter Method
+    public void setId(int id){
+        this.Id = id;
+    }
+    public void setUsername(String name){
+        this.Username = name;
+    }
+    public void setEmail(String email){
+        this.Email = email;
+    }
+    public void setPassword(String pass){
+        this.Password = pass;
+    }
+    public void setCreated(Data date){
+        this.Created = date;
+    } 
+
+    void getAll(int Id, String name, String Email, String Password, Data created){
+        this.Id = Id;
+        this.Username = name;
+        this.Email = Email;
+        this.Password = Password;
+        this.Created = created;
+    }
 
 }
