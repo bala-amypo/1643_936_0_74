@@ -11,6 +11,6 @@ public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
     @Override
     public StudentEntity PostData(StudentEntity entity){
-        return student.save(stu);
+        return student.save(student);
     }
 }
