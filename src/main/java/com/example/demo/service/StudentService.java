@@ -4,6 +4,8 @@ import com.example.demo.StudentEntity;
 import com.example.demo.StudentController;
 
 
-public class StudentService {
-    
+public interface StudentService {
+    public void post(){
+        
+    }
 }
