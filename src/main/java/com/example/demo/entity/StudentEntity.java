@@ -19,16 +19,16 @@ public class StudentEntity{
     public void getId(){
         return id;
     }
-    public void getUsername(){
+    public String getUsername(){
         return Username;
     }
-    public void getEmail(){
+    public String getEmail(){
         return Email;
     }
-    public void getPassword(){
+    public String getPassword(){
         return Password;
     }
-    public void getCreated(){
+    public Date getCreated(){
         return Created;
     } 
 
