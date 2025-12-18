@@ -20,4 +20,9 @@ public class StudentController {
     public List<StudentEntity> getAll(){
         return service.getAllData();
     }
+    @GetMapping("/del")
+    public String DeleteData(int id){
+        
+    }
+
 }
