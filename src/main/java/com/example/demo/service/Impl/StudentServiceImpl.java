@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService{
         return "Deleted Succesfully";
     }
     @Override
-    public StudentEntity FindId(int id){
+    public StudentEntity findId(int id){
         return student.FindById(id);
     }
 }
