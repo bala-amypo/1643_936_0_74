@@ -16,23 +16,23 @@ import java.util.List;
 public class ValidationController {
     @Autowired ValidationService service;
     @PostMapping("/post")
-    public StudetEntity postvalue(@RequestBody StudentEntity entity){
-        returnervice.Postdata(entity);
+    public ValidationEntity postvalue(@RequestBody ValidationEntity entity){
+        return service.Postdata(entity);
     }
     @GetMapping("/get")
-    public List<StudentEntity> getAll(){
+    public List<ValidationEntity> getAll(){
         return service.getAllData();
     }
     @DeleteMapping("/del/{id}")
-    public String DeleteData(@PathVariable int id){
+    public String DeleteData(@PathVariable Long id){
         return service.DeleteData(id);
     }
     @GetMapping("/find/{id}")
-    public StudentEntity FindId(@PathVariable int id){
+    public ValidationEntity FindId(@PathVariable Long id){
         return service.FindId(id);
     }
     @PutMapping("/put/{id}")
-    public StudentEntity PutData(@PathVariable int id, @RequestBody StudentEntity entity){
+    public ValidationEntity PutData(@PathVariable Long id, @RequestBody ValidationEntity entity){
         return service.PutData(id, entity);
     }
 
