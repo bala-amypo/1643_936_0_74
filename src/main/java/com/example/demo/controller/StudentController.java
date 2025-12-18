@@ -22,7 +22,7 @@ public class StudentController {
     }
     @GetMapping("/del")
     public String DeleteData(int id){
-        
+        return service.DeleteData(id);
     }
 
 }

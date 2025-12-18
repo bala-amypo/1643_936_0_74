@@ -7,6 +7,7 @@ import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+
 @Service
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
@@ -20,6 +21,7 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public String DeleteData(int id){
-        
+        student.deleteById(id);
+        return "Deleted Succesfully";
     }
 }
