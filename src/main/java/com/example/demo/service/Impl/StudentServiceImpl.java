@@ -32,6 +32,7 @@ public class StudentServiceImpl implements StudentService{
     public StudentEntity PutData(int id, StudentEntity entity){
         if(student.existsById(id)){
             entity.setId(id);
+            return student.save(entity);
         }else{
             return student.save(entity);
         }
