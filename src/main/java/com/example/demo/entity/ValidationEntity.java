@@ -21,7 +21,7 @@ public class ValidationEntity{
     @Email(message="Email not valid")
     private String email;
     @NotNull(message="Password is required")
-    @Size(max=6, message="Password should be at max 6 letters")
+    @Size(max=5, message="Password should be at max 6 letters")
     private String password;
     @NotNull(message="Age is required")
     @Size(max=30, message="Person should be 30 or below 30 years old")
