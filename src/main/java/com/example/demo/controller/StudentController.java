@@ -26,5 +26,9 @@ public class StudentController {
     public String DeleteData(@PathVariable int id){
         return service.DeleteData(id);
     }
+    @GetMapping("/FindId")
+    public StudentEntity FindId(@PathVariable int id){
+        return service.FindId(id);
+    }
 
 }
