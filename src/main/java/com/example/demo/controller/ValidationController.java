@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import jakarta.validation.constraints.Valid;
 import java.util.List;
 
 @RestController
 public class ValidationController {
     @Autowired ValidationService service;
     @PostMapping("/nvpost")
-    public ValidationEntity postvalue(@RequestBody ValidationEntity entity){
+    public ValidationEntity postvalue(@Valid @RequestBody ValidationEntity entity){
         return service.Postdata(entity);
     }
     @GetMapping("/nvget")
