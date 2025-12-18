@@ -6,7 +6,7 @@ import com.example.demo.entity.ValidationEntity;
 public interface ValidationService {
     ValidationEntity Postdata(ValidationEntity entity);
     List<ValidationEntity>getAllData();
-    String DeleteData(int id);
-    ValidationEntity FindId(int id);
-    ValidationEntity PutData(int id, ValidationEntity entity);
+    String DeleteData(Long id);
+    ValidationEntity FindId(Long id);
+    ValidationEntity PutData(Long id, ValidationEntity entity);
 }
