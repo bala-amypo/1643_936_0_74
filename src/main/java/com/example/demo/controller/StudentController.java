@@ -31,6 +31,8 @@ public class StudentController {
         return service.FindId(id);
     }
     @PutMapping("/put/{id}")
-    public StudentEntity PutData(@PathV)
+    public StudentEntity PutData(@PathVariable int id, @RequestBody StudentEntity entity){
+        return service.PutData(id, entity);
+    }
 
 }
