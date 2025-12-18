@@ -30,7 +30,7 @@ public class ValidationEntity{
 
     
     //Getter Method
-    public Integer getId(){
+    public Long getId(){
         return id;
     }
     public String getUsername(){
@@ -47,7 +47,7 @@ public class ValidationEntity{
     } 
 
     //Setter Method
-    public void setId(Integer id){
+    public void setId(Long id){
         this.id = id;
     }
     public void setUsername(String name){
@@ -57,7 +57,7 @@ public class ValidationEntity{
         this.email = email;
     }
     public void setPassword(String pass){
-        this.eassword = pass;
+        this.password = pass;
     }
     public void setAge(int age){
         this.age = age;
