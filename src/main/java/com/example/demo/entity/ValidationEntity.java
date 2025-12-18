@@ -28,7 +28,6 @@ public class ValidationEntity{
     @Positive
     private int age;
 
-    
     //Getter Method
     public Long getId(){
         return id;
