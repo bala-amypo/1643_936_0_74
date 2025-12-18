@@ -5,6 +5,7 @@ import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,5 +14,9 @@ public class StudentController {
     @PostMapping("/post")
     public StudentEntity postvalue(@RequestBody StudentEntity entity){
         return service.Postdata(entity);
+    }
+    @GetMapping("/get")
+    public List<StudentEntity> getAll(){
+        return service.getAllData();
     }
 }
