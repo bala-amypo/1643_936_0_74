@@ -21,7 +21,7 @@ public class StudentController {
     public List<StudentEntity> getAll(){
         return service.getAllData();
     }
-    @GetMapping("/del/{id}")
+    @DeleteMapping("/del/{id}")
     public String DeleteData(@PathVariable int id){
         return service.DeleteData(id);
     }
