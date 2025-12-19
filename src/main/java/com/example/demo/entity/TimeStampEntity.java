@@ -93,15 +93,4 @@ public class TimeStampEntity{
         this.editedat = now;
     }
 }
-    @PrePersist
-    public void Oncreate(){
-        LocalDateTime now = LocalDateTime().now();
-        this.createdat = now;
-        this.editedat = now;
-    }
-    @PreUpdate
-    public void Onupdate(){
-        LocalDateTime now = LocalDateTime().now();
-        this.editedat = now;
-    }
 }
