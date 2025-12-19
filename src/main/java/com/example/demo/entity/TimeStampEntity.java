@@ -38,7 +38,6 @@ public class TimeStampEntity{
     @Email(message="Email not valid")
     private String email;
     @NotNull(message="Password is required")
-    @Size(max=5, message="Password should be at max 6 letters")
     private LocalDateTime createdat;
     private LocalDateTime editedat;
     @PrePersist
