@@ -22,7 +22,8 @@ import lombok.Data;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Data
+@Table(name = "validation")
+
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
