@@ -1,10 +1,10 @@
 package com.example.demo.service;
 
 import java.util.List;
-import com.example.demo.entity.ValidationEntity;
+import com.example.demo.entity.TimeStampEntity;
 
 public interface TimeStampService {
-    ValidationEntity Postdata(ValidationEntity entity);
-    List<ValidationEntity>getAllData();
-    ValidationEntity PutData(Long id, ValidationEntity entity);
+    TimeStampEntity Postdata(TimeStampEntity entity);
+    List<TimeStampEntity>getAllData();
+    TimeStampEntity PutData(Long id, TimeStampEntity entity);
 }
