@@ -22,7 +22,7 @@ import jakarta.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "validation")
+@Table(name = "TimeStamp")
 
 public class TimeStampEntity{
     @Id
@@ -35,10 +35,6 @@ public class TimeStampEntity{
     private String email;
     @NotNull(message="Password is required")
     @Size(max=5, message="Password should be at max 6 letters")
-    private String password;
-    @NotNull(message="Age is required")
-    @Max(30)
-    @Positive
-    private int age;
-
+    private LocalDateTime createdat;
+    private LocalDateTime editedat;
 }
