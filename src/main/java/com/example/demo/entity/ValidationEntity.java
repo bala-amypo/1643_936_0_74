@@ -15,9 +15,8 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
-import lombok.Table;
+import jakarta.persistence.Table;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
