@@ -22,4 +22,7 @@ public class idDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private int IDnumber;
+    @OneToOne
+    private StudentDetails student;
+     
 }
