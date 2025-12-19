@@ -1,9 +1,9 @@
 package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.service.ValidationService;
+import com.example.demo.service.TimeStampService;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import com.example.demo.entity.ValidationEntity;
+import com.example.demo.entity.TimeStampEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +25,7 @@ public TimeStampController {
         return service.getAllData();
     }
     @PutMapping("/nvput/{id}")
-    public TimeStampEntity PutData(@PathVariable Long id, @RequestBody ValidationEntity entity){
+    public TimeStampEntity PutData(@PathVariable Long id, @RequestBody TimeStampEntity entity){
         return service.PutData(id, entity);
     }
 

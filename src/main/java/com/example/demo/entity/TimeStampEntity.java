@@ -3,6 +3,7 @@ package com.example.demo.entity;
 import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
 import jakarta.validation.constraints.Max;
 import jakarta.persistence.GenerationType;
