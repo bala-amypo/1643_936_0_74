@@ -39,21 +39,21 @@ public class TimeStampEntity {
     @Email
     private String email;
 
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private LocalDateTime createdAt;
+    @Column(name = "created_at", nullable = false)
+    private LocalDateTime createdat;
 
-    @Column(name = "edited_at")
-    private LocalDateTime editedAt;
+    @Column(name = "edited_at", nullable = false)
+    private LocalDateTime editedat;
 
     @PrePersist
-    protected void onCreate() {
+    public void onCreate() {
         LocalDateTime now = LocalDateTime.now();
-        this.createdAt = now;
-        this.editedAt = now;
+        this.createdat = now;
+        this.editedat = now;
     }
 
     @PreUpdate
-    protected void onUpdate() {
-        this.editedAt = LocalDateTime.now();
+    public void onUpdate() {
+        this.editedat = LocalDateTime.now();
     }
 }
