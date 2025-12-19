@@ -1,6 +1,8 @@
 package com.example.demo.service;
 
 import java.util.List;
+
+import java.time.LocalDateTime;
 import com.example.demo.entity.TimeStampEntity;
 
 public interface TimeStampService {
