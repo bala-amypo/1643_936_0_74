@@ -31,6 +31,6 @@ public class TimeStampController {
     @PutMapping("/nput/{id}")
     public TimeStampEntity putData(@PathVariable Long id,
                                    @RequestBody TimeStampEntity entity) {
-        return service.putData(id, entity).;
+        return service.putData(id, entity);
     }
 }
