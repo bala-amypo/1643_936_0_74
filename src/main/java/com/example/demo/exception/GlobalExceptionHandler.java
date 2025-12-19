@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.http.HttpStatus;
 
-
 @RestControllerAdvice
-public class GlobalExceptionHandler{
-    @ExceptionHandler(ValidationException.class)
-    public ResponseBody<String> handleValidationException(ValidationExcaption error){
-        return new ResponseBody<String>(error.getMessage(),HttpStatus.BAD_GATEWAY);
+public class GlobalExceptionHandler {
 
+    @ExceptionHandler(ValidationException.class)
+    public ResponseEntity<String> handleValidationException(ValidationException error) {
+        return new ResponseEntity<>(
+                error.getMessage(),
+                HttpStatus.BAD_REQUEST
+        );
     }
 }
