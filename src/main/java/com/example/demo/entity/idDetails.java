@@ -25,7 +25,6 @@ public class idDetails {
     private Integer id;
     private int IDnumber;
     @OneToOne
-    //@JoinColumn -> foreign column
     @JoinColumn(name = "student_details")
     private StudentDetails student;
 }
