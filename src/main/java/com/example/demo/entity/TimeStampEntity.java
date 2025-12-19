@@ -27,7 +27,7 @@ public class TimeStampEntity {
     @Size(min = 5, max = 10, message = "Must be between 5 and 10 characters")
     private String username;
 
-    @Email(message = "Email not valid")
+    @Email
     private String email;
 
     private LocalDateTime createdAt;
