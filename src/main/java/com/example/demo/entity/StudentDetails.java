@@ -25,3 +25,4 @@ public class StudentDetails {
     private String email;
     private String adderss;
 }
+ 
