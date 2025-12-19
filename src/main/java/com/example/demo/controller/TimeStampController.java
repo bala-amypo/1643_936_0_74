@@ -19,7 +19,7 @@ public class TimeStampController {
 
     @PostMapping("/npost")
     public TimeStampEntity postValue(@Valid @RequestBody TimeStampEntity entity) {
-        return service.ostData(entity);
+        return service.postData(entity);
     }
 
     @GetMapping("/nget")

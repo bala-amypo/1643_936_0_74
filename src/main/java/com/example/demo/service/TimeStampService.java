@@ -4,7 +4,7 @@ import java.util.List;
 import com.example.demo.entity.TimeStampEntity;
 
 public interface TimeStampService {
-    TimeStampEntity Postdata(TimeStampEntity entity);
+    TimeStampEntity postData(TimeStampEntity entity);
     List<TimeStampEntity>getAllData();
-    TimeStampEntity PutData(Long id, TimeStampEntity entity);
+    TimeStampEntity putData(Long id, TimeStampEntity entity);
 }

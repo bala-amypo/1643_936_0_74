@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class TimeStampServiceImpl implements TimeStampService{
     @Autowired TimeStampRepository student;
     @Override
-    public TimeStampEntity Postdata(TimeStampEntity entity){
+    public TimeStampEntity postData(TimeStampEntity entity){
         return student.save(entity);
     }
     @Override
@@ -20,7 +20,7 @@ public class TimeStampServiceImpl implements TimeStampService{
         return student.findAll();
     }
     @Override 
-    public TimeStampEntity PutData(Long id, TimeStampEntity entity){
+    public TimeStampEntity putData(Long id, TimeStampEntity entity){
         if(student.existsById(id)){
             entity.setId(id);
             return student.save(entity);
