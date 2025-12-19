@@ -36,4 +36,4 @@ public class idDetailsController {
         return service.PutData(id, entity);
     }
 
-}
+} 
