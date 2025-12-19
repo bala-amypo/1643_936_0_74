@@ -2,6 +2,8 @@ package com.example.demo.entity;
 
 import java.util.Date;
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Id;
 import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
@@ -44,6 +46,9 @@ public class TimeStampEntity{
         this.createdat = now;
         this.editedat = now;
     }
-    @OreUpdate
-    
+    @PreUpdate
+    public void Onupdate(){
+        LocalDateTime now = LocalDateTime().now();
+        this.editedat = now;
+    }
 }
