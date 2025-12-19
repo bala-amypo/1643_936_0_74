@@ -14,7 +14,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 
 @RestController
-public TimeStampController {
+public TimeStampController{
     @Autowired TimeStampService service;
     @PostMapping("/nvpost")
     public TimeStampEntity postvalue(@Valid @RequestBody TimeStampEntity entity){
