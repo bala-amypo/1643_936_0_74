@@ -1,8 +1,8 @@
 package com.example.demo.exception;
 
-import java.lang.RunTimeException;
+import java.lang.RuntimeException;
 
-public class ResourceNotFoundException extends RunTimeException{
+public class ResourceNotFoundException extends RuntimeException{
     public ResourceNotFoundException(String message){
         super(message);
         
