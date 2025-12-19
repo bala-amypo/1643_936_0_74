@@ -18,6 +18,7 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
+import java.time.LocalDateTime;
 import jakarta.persistence.Table;
 
 @Getter
