@@ -1,5 +1,8 @@
 package com.example.demo.exception;
 
 public class GlobalExceptionHandler extends RunTimeException{
-    public Global
+    public GlobalExceptionHandler(String message){
+        super(message);
+        
+    }
 }
