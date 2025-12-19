@@ -12,7 +12,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleValidationException(ValidationException error) {
         return new ResponseEntity<>(
                 error.getMessage(),
-                HttpStatus.BAD_REQUEST
+                HttpStatus.BAD_GATEWAY
         );
     }
 }
