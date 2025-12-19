@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionHandler{
     @ExceptionHandler(ValidationException.class)
-    public ResponseBody<String> handleValidationException(ValidationExcaption ){
-        super(message);
+    public ResponseBody<String> handleValidationException(ValidationExcaption error){
+        return new ResponseBody<String>();
 
     }
 }
