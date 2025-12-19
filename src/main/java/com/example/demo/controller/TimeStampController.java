@@ -16,15 +16,15 @@ import java.util.List;
 @RestController
 public TimeStampController{
     @Autowired TimeStampService service;
-    @PostMapping("/nvpost")
+    @PostMapping("/npost")
     public TimeStampEntity postvalue(@Valid @RequestBody TimeStampEntity entity){
         return service.Postdata(entity);
     }
-    @GetMapping("/nvget")
+    @GetMapping("/nget")
     public List<ValidationEntity> getAll(){
         return service.getAllData();
     }
-    @PutMapping("/nvput/{id}")
+    @PutMapping("/nput/{id}")
     public TimeStampEntity PutData(@PathVariable Long id, @RequestBody TimeStampEntity entity){
         return service.PutData(id, entity);
     }
