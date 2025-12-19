@@ -38,4 +38,12 @@ public class TimeStampEntity{
     @Size(max=5, message="Password should be at max 6 letters")
     private LocalDateTime createdat;
     private LocalDateTime editedat;
+    @PrePersist
+    public void Oncreate(){
+        LocalDateTime now = LocalDateTime().now();
+        this.createdat = now;
+        this.editedat = now;
+    }
+    @OreUpdate
+    
 }
