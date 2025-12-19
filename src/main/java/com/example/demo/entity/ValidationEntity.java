@@ -14,6 +14,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.Data;
 
 @Entity
 @Getter
@@ -21,6 +22,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Data
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
