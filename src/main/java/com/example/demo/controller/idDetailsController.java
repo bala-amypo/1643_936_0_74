@@ -1,9 +1,9 @@
 package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.service.StudentDetailsService;
+import com.example.demo.service.idDetailsService;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import com.example.demo.entity.StudentDetailsEntity;
+import com.example.demo.entity.idDetailsEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class StudentDetailsController {
-    @Autowired StudentDetailsService service;
+public class idDetailsController {
+    @Autowired idDetailsService service;
     @PostMapping("/post")
-    public StudentDetailsEntity postvalue(@RequestBody StudentDetailsEntity entity){
+    public idDetailsEntity postvalue(@RequestBody idDetailsEntity entity){
         return service.Postdata(entity);
     }
     @GetMapping("/get")
-    public List<StudentDetailsEntity> getAll(){
+    public List<idDetailsEntity> getAll(){
         return service.getAllData();
     }
     @DeleteMapping("/del/{id}")
@@ -28,11 +28,11 @@ public class StudentDetailsController {
         return service.DeleteData(id);
     }
     @GetMapping("/find/{id}")
-    public StudentDetailsEntity FindId(@PathVariable int id){
+    public idDetailsEntity FindId(@PathVariable int id){
         return service.FindId(id);
     }
     @PutMapping("/put/{id}")
-    public StudentDetailsEntity PutData(@PathVariable int id, @RequestBody StudentDetailsEntity entity){
+    public idDetailsEntity PutData(@PathVariable int id, @RequestBody idDetailsEntity entity){
         return service.PutData(id, entity);
     }
 
