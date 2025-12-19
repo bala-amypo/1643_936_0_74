@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Getter;
 import lombok.Setter;
+import jakarta.persistence.
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
@@ -23,6 +24,6 @@ public class idDetails {
     private Integer id;
     private int IDnumber;
     @OneToOne
+    //@JoinColumn -> foreign column
     private StudentDetails student;
-     
 }
